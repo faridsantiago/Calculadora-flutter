@@ -33,7 +33,7 @@ class Mathlogical extends State<Operations>{
         margin: const EdgeInsets.all(10),
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
-            primary: const Color.fromARGB(62, 110, 72, 72)
+            primary: const Color.fromARGB(92, 255, 6, 6)
           ),
           onPressed: (){
             butonEdition(buttonValue);
@@ -47,7 +47,7 @@ class Mathlogical extends State<Operations>{
             child: Text(
               buttonValue,
               style: const TextStyle(
-                color: Color.fromARGB(235, 251, 255, 5),fontSize: 30)
+                color: Color.fromARGB(235, 255, 255, 255),fontSize: 30)
               ),
             ),
 
@@ -63,7 +63,7 @@ class Mathlogical extends State<Operations>{
     
     return Scaffold(
       
-      backgroundColor: const Color.fromARGB(255, 4, 15, 30),
+      backgroundColor: const Color.fromARGB(239, 202, 202, 202),
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: const Color.fromARGB(255, 249, 16, 16),
@@ -84,7 +84,7 @@ class Mathlogical extends State<Operations>{
               history,
               style: const TextStyle(
                 fontSize: 20,
-                color: Color.fromARGB(255, 255, 255, 255)
+                color: Color.fromARGB(255, 0, 0, 0)
                 
               
               ),
@@ -99,7 +99,7 @@ class Mathlogical extends State<Operations>{
               output,
               style: const TextStyle(
                 fontSize: 40,
-                color: Color.fromARGB(255, 255, 255, 255),
+                color: Color.fromARGB(255, 0, 0, 0),
               ),
             ),
           ),
@@ -109,42 +109,35 @@ class Mathlogical extends State<Operations>{
             children: [
               Row(
                 children: [
-                  buildbutton("AC", 3),
+                  buildbutton("AC",3),
                   buildbutton("/", 1)
                 ],
-              ),
-
-              Row(
+              ),Row(
                 children: [
-                  buildbutton("7", 1),
-                  buildbutton("8", 1),
-                  buildbutton("9", 1),
-                  buildbutton("x", 1),
+                  buildbutton("7", 2),
+                  buildbutton("8", 2),
+                  buildbutton("9", 2),
+                  buildbutton("x", 2),
                 ],
-              ),
-
-              Row(
+              ),Row(
                 children: [
-                  buildbutton("4", 1),
-                  buildbutton("5", 1),
-                  buildbutton("6", 1),
-                  buildbutton("-", 1),
+                  buildbutton("4", 2),
+                  buildbutton("5", 2),
+                  buildbutton("6", 2),
+                  buildbutton("-", 2),
                 ],
-              ),
-              Row(
+              ),Row(
                 children: [
-                  buildbutton("1", 1),
-                  buildbutton("2", 1),
-                  buildbutton("3", 1),
-                  buildbutton("+", 1),
+                  buildbutton("1", 2),
+                  buildbutton("2", 2),
+                  buildbutton("3", 2),
+                  buildbutton("+", 2),
                 ],
-              ),
-
-              Row(
+              ),Row(
               children: [
-                buildbutton("0", 1),
+                buildbutton("0", 2),
                 buildbutton(".", 1),
-                buildbutton("=", 2),
+                buildbutton("=", 1),
               ],
             ),
             ],
