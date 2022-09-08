@@ -12,11 +12,11 @@ class Operations extends StatefulWidget{
 
 class Mathlogical extends State<Operations>{
   
-  int result= 0;
+  double result= 0;
   final textStyle =  const TextStyle(color: Color.fromARGB(255, 255, 255, 255), fontSize: 20);
 
-  dynamic number1;
-  dynamic number2;
+  double number1=0;
+  double number2=0;
 
   String temp='0';
   String output='0';
@@ -30,7 +30,7 @@ class Mathlogical extends State<Operations>{
       flex: flexValue,
       child: Container(
         
-        margin: const EdgeInsets.all(10),
+        margin: const EdgeInsets.all(3),
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
             primary: const Color.fromARGB(92, 255, 6, 6)
@@ -104,7 +104,8 @@ class Mathlogical extends State<Operations>{
             ),
           ),
 
-          //Diseño de los botones  
+          //Diseño de los botones 
+          //lo vi en un tutorial y documentación de flutter
           Column(
             children: [
               Row(
